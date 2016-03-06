@@ -12,18 +12,18 @@
 /// <reference path='home/posts/CommentModel.ts' />
 /// <reference path='home/posts/PostModel.ts' />
 
-/// <reference path='utils/apputil.ts' />
+/// <reference path='utils/moduleutil.ts' />
 
 module app {
 
-	var registerUtil: utils.Register = new utils.Register();
+	var moduleUtil: utils.ModuleUtil = new utils.ModuleUtil();
 
-	var controllerModules:ng.IModule = registerUtil.registerModule('controllers', []);
-	var servicesModules: ng.IModule = registerUtil.registerModule('services', []);
+	var controllerModules: ng.IModule = moduleUtil.registerModule('controllers', []);
+	var servicesModules: ng.IModule = moduleUtil.registerModule('services', []);
 
 	//var authModule:ng.IModule = register.addModule('controllers', ['firebase']);
 	//var postModule:ng.IModule = register.addModule('posts', ['auth']);
-	var app: ng.IModule = registerUtil.registerModule('app', ['ui.router', 'controllers', 'services', 'firebase']);
+	var app: ng.IModule = moduleUtil.registerModule('app', ['ui.router', 'controllers', 'services', 'firebase']);
 
 	app.config(function($stateProvider, $urlRouterProvider) {
 
@@ -31,27 +31,27 @@ module app {
 
 		$stateProvider.state('list', {
 			url: '/post/list',
-			templateUrl:'public/partials/posts/list.html'
+			templateUrl:'public/partials/home/posts/list.html'
 		});
 
 		$stateProvider.state('create', {
 			url: '/post/create',
-			templateUrl: 'public/partials/posts/create.html'
+			templateUrl: 'public/partials/home/posts/create.html'
 		});
 
 		$stateProvider.state('edit', {
 			url: '/post/edit',
-			templateUrl: 'public/partials/posts/edit.html'
+			templateUrl: 'public/partials/home/posts/edit.html'
 		});
 
 	});
 
-	registerUtil.registerServices(services);
+	moduleUtil.registerServices(services);
 
 	// register all controllers by providing the module name
-	registerUtil.registerControllers(controllers);
+	moduleUtil.registerControllers(controllers);
 
-	registerUtil.registerDirectives(directives);
+	moduleUtil.registerDirectives(directives);
 
 	//register a single controller
 //	register.addController('AuthController', auth.AuthController);
