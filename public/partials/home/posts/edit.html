@@ -1,0 +1,14 @@
+<form>
+  <div class="form-group">
+    <label for="postTitle">Post Title</label>
+    <input class="form-control" id="postTitle" ng-model="postctrl.currItem.title" placeholder="title goes here ..">
+  </div>
+  <div class="form-group">
+    <label for="postContent">Post Content</label>
+    <textarea class="form-control" id="postContent" ng-model="postctrl.currItem.content" placeholder="Content goes here ..."></textarea>
+  </div>
+  <button class="btn btn-default" ng-click="postctrl.edit()" >Save post</button>
+  <button class="btn btn-default" ui-sref="list">Back to posts</button>
+  
+</form>
+</form>
