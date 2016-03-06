@@ -1,19 +1,17 @@
-# showcase
+## showcase 
+---
+* Author: Pavan Sachi
+* [Github]
+* [My website] 
 
-#### How to build?
-
-grunt typescript
-grunt sass
-
+#### How to build project?
+```sh
+npm install
+npm run prepare
+```
 #### How to run locally?
-
-grunt connect
-
-#### How to install typescript dependencies using typings?
-
-typings install --ambient angular
-typings install --ambient jquery
-
-#### How to install bower?
-
-bower install
+```sh
+grunt sass typescript connect
+```
+[Github]: <https://github.com/pavansachi/showcase>
+[My website]: <https://pavansachi.firebaseapp.com>
