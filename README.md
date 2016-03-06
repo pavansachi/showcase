@@ -1,6 +1,6 @@
 # showcase
 
-# How to build?
+## How to build?
 
 grunt typescript
 grunt sass
