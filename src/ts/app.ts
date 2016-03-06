@@ -1,5 +1,5 @@
-/// <reference path='../../typings/browser/ambient/jquery/jquery.d.ts' />
-/// <reference path='../../typings/browser/ambient/angular/angular.d.ts' />
+/// <reference path='../typings/browser/ambient/jquery/jquery.d.ts' />
+/// <reference path='../typings/browser/ambient/angular/angular.d.ts' />
 
 /// <reference path='login/AuthController.ts' />
 /// <reference path='home/posts/PostController.ts' />

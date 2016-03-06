@@ -1,6 +1,8 @@
 .DS_Store
+src/ts/.DS_Store
 node_modules/
 src/ts/typings/
 public/bower_components/
 public/js/
 public/css/
+.sass-cache/
