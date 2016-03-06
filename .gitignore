@@ -1,7 +1,7 @@
 .DS_Store
 src/ts/.DS_Store
 node_modules/
-src/ts/typings/
+src/typings/
 public/bower_components/
 public/js/
 public/css/
