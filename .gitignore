@@ -2,7 +2,7 @@
 src/ts/.DS_Store
 node_modules/
 src/typings/
-public/bower_components/
+bower_components/
 public/js/
 public/css/
 .sass-cache/
